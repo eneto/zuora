@@ -15,6 +15,7 @@ module Zuora::Objects
     validates_inclusion_of :bcd_setting_option, :in => ['AutoSet','ManualSet'], :allow_nil => true
     validates_inclusion_of :bill_cycle_day, :in => (1..31).to_a + (1..31).map(&:to_s)
     validates_inclusion_of :status, :in => ['Draft','Active','Canceled'], :allow_nil => true
+    validates_inclusion_of :fitbit_id__c, :allow_nil => true
 
     define_attributes do
       read_only :balance, :created_date, :credit_balance, :last_invoice_date,
