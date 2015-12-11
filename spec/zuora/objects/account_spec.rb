@@ -15,8 +15,7 @@ describe Zuora::Objects::Account do
        "created_by_id", "created_date", "crm_id", "currency", "customer_service_rep_name",
        "default_payment_method_id", "id", "invoice_delivery_prefs_email", "invoice_delivery_prefs_print",
        "invoice_template_id", "last_invoice_date", "name", "notes", "payment_gateway", "payment_term",
-       "purchase_order_number", "sales_rep_name", "sold_to_id", "status", "updated_by_id", "updated_date", 
-       "fitbit_id__c"]
+       "purchase_order_number", "sales_rep_name", "sold_to_id", "status", "updated_by_id", "updated_date"]
   end
 
   it "has read only attributes" do
